@@ -1,0 +1,171 @@
+
+/* Header */
+.Crest, .lotto, .Crest2, .lotto2
+{
+    margin: 2px;
+}
+
+.headings
+{
+    margin: 1%;
+    text-align: center 
+}
+
+
+
+
+/*HOME PAGE*/    
+.sidenav 
+{
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.well
+{
+    border:2px solid darkgray;
+    height: auto;
+    margin-bottom: 2%;
+    
+}
+
+.button
+{
+    color: black;
+    background-color: darkgray;
+    padding: 4px;
+    
+    
+}
+
+.button a
+{
+   margin: 8px;
+}
+.bar
+{
+    background-color: dimgray;
+}
+
+/*HOME PAGE*/
+.description
+{
+    padding: .5em;
+    margin: 0 10%;
+}
+
+
+/*GALLERY*/
+#container3{
+	width: 80%;
+	margin: 0 auto;
+    background: white;
+    overflow:auto;
+}
+
+#gallery {
+    float:left;
+	width: 85px;
+	padding: 0 20px 30px 10px;
+	border-right: 1px solid #5C7B7B;
+}
+
+#gallery a {
+	padding:5px 5px 3px 5px;
+	display: block;
+	border: 1px solid #666;
+	margin: 20px 80px 20px 0px;
+	width: 70px;
+}
+
+#gallery img {
+	border: 1px solid #666;
+}
+
+#photo {
+	width: 422px;
+	padding: 10% 20% 0 30%;
+}
+
+#photo img {
+	padding: 4%;
+	border: 1px solid #333;
+	position: absolute;
+	background-color:white;
+}
+
+
+
+
+/*CONTACT PAGE*/
+
+.validationError {
+  color: white !important;
+  background-color:gray !important;
+} 
+
+.ui-state-error {
+  font-size: 1em;
+  color: gray;
+  font-weight: bold;
+  background-color:transparent;
+  border-color:transparent;
+}
+
+
+/* Buttons*/
+.buttons img 
+{
+    width: 70px;
+    padding: 5px;
+    border: 0;
+    display:inline;
+    text-align: center;
+}
+
+.info
+{
+    margin:3%;
+}
+
+/*TEAMS*/
+.team
+{
+    padding: 2%;
+}
+
+/*LOTTO PAGE*/
+.return
+{
+    padding: 2em;
+    color: black;
+}
+
+.numbers
+{
+    padding-top:1em;
+    margin-top: 8%;
+}
+
+.form-group 
+{
+  margin-top: 8%;
+  padding-top:1em;
+}
+
+input[type="text"]:valid 
+{
+    color: green;
+}
+
+input[type="text"]:invalid 
+{
+    color: black;
+    border-color:black;
+    border-bottom-style:double;
+}
+
+
+
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blacks and Whites GAA Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="CSS/mycss.css">
+     <link rel="stylesheet" href="CSS/membership.css">
+     <link rel="stylesheet" href="CSS/mycss2.css">
+     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+     <link rel="stylesheet" href="js/myJs.js">
+     <link rel="stylesheet" href='CSS/bootstrap-datepicker.min.css' >
+  </head>
+  <body class="page">
+      <div class="container2">
+      
+        <header>
+          <div class="row">
+              <div class="col-2">
+          <div class ="Crest">
+      <img src="Images/Crest.png" alt="Crest"
+           width="84" height="90">
+          </div>
+              </div>
+           
+                <div class="col-8">       
+       <h1>Blacks & Whites GAA Club </h1>
+                  <h4>Cumann Dubh agus Bána CLGs</h4>
+                                 </div>
+              
+              <div class="col-2">
+          <div class ="Crest2">
+      <img src="Images/Crest.png" alt="Crest"
+           width="84" height="90">
+                  </div>
+          </div>
+            </div>
+      </header>
+        
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="nav-content">
+<ul class="navbar-nav">
+   <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+   <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item dropdown">
+   <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true"
+    aria-expanded="false">
+    Teams
+   </a>
+   <div class="dropdown-menu" aria-labelledby="Preview">
+    <a class="dropdown-item" href="Junior.html">Hurling</a>
+     <a class="dropdown-item" href="camoige.html">Camoige</a>
+    
+   </div>
+</li>
+    <li class="nav-item"><a class="nav-link" href="shop.html">Club Shop</a></li>
+   <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+</ul>
+
+      </div>
+      </nav>
+
+          <div class="signup">
+              <div class="row">
+<section class="col-sm-9">
+
+  <form action="process.html" method="get" name="signup" id="signup" >
+  <fieldset>
+      <h2 class="team">Signup Form</h2>
+    <div class ="form-group row">
+       <label for="name" class="col-sm-3 col-form-label">Name</label>
+       <div class="col-sm-9">
+         <input type="text" class="form-control" name="name"  id="name" data-h5-errorid="invalid-name" autofocus required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)?"
+                title="Please enter a name (Surname optional) with First Letter capitalised">
+         <div id="invalid-name" class="ui-state-error"></div>
+       </div>
+   </div>
+
+     <div class ="form-group row">
+      <label for="email" class="col-sm-3 col-form-label">E-mail Address</label>
+     <div class="col-sm-9">
+     <input name="email" class="form-control" type="email" id="email" data-h5-errorid ="invalid-email" required  pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"
+     title="Please enter a valid email">
+     <div id="invalid-email" class="ui-state-error">
+    </div>
+    </div>
+    </div>
+
+     <div class ="form-group row">
+      <label for="mypassword" class="col-sm-3 col-form-label">Password</label>
+     <div class="col-sm-9">
+     <input name="mypassword" class="form-control" type="password" id="mypassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}" data-h5-errorid ="invalid-pass" onchange="form.confirm_password.pattern = this.value;" title = "Please enter a valid Password which is at least 6 characters in length and includes at least one capital letter and at least one digit">
+      <div id="invalid-pass" class="ui-state-error">
+        </div></div></div>
+
+     <div class ="form-group row">
+	       <label for="confirm_password" class="col-sm-3 col-form-label">Confirm Password</label>
+	      <div class="col-sm-9">
+	      <input name="confirm_password" class="form-control" type="password" id="confirm_password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}" data-h5-errorid ="invalid-pass2"
+	       onchange="form.mypassword.pattern = this.value;" title = "Please enter a valid Password which is at least 6 characters in length and includes at least one capital letter and at least one digit">
+	       <div id="invalid-pass2" class="ui-state-error">
+        </div></div></div>
+
+         <div class ="form-group row">
+          <label for="dob" class="col-sm-3 col-form-label">Date of Birth</label>
+           <div class="col-sm-9">
+            <div class="input-group date">
+              <input type="text" id='dob' name="dob" class="form-control" data-h5-errorid ="invalid-date" required title="Please select/provide a date">
+              <label for="dob" class="input-group-addon"><i class="fa fa-calendar-check-o"></i></label>
+              </div>
+              <div id="invalid-date" class="ui-state-error">
+             </div>
+          </div>
+         </div>
+      
+            <div class = "form-group row">
+                <label for="dob" class="col-sm-3 col-form-label">Please Select Type Of Membership</label>
+ <div class="col-sm-9">
+         <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="adult" value="adult" checked="checked">Adult
+        </label>
+ </div>
+         <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="player" value="player">Player
+        </label>
+ </div>
+
+          <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="child" value="child">Child
+        </label>
+ </div>
+     
+          <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="OAP" value="OAP">OAP
+        </label>
+ </div>
+
+         <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="family" value="Family">Family
+        </label>
+ </div>
+ </div>
+
+ </div>
+
+  <div class="form-group row justify-content-end">
+    <div class="col-sm-9">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+      
+
+          </fieldset>
+  </form>
+              </section>
+</div>
+          </div>
+     
+
+    <script id="footer" type="text/x-handlebars-template">
+<div class="footer1">
+  <h5>{{club}}</h5>
+  <p>{{address}}</p>
+  <p>{{tele}}</p>
+  <p>{{email}}</p>
+</div>
+</script>
+
+      
+     <script src="js/jquery-3.2.1.slim.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/bootstrap-datepicker.min.js"></script>
+     <script src="js/jquery.h5validate.js"></script>
+     <script src="js/footer.js"></script>
+     <script src="js/handlebars.min.js"></script>
+      
+          <script>
+          $(document).ready(function () {
+
+$("#dob").datepicker({
+     format: "dd-mm-yyyy",
+     startDate: "01-01-1940",
+     endDate: "+0d",
+     startView:2
+});
+
+  $('form').h5Validate({errorClass:'validationError' });              
+          </script>
+      </div>
+</body>
+</html>

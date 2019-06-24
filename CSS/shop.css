@@ -1,0 +1,26 @@
+.button 
+{
+  display: inline-block;
+  background: #39C;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.productTitle
+{
+   padding: 4px; 
+}
+
+.Content
+{
+    padding: 10px 60px 40px 60px;
+}
+
+.shopTitle
+{
+    padding: 16px;
+}

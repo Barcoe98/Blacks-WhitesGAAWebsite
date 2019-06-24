@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blacks and Whites GAA Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="CSS/mycss.css">
+     <link rel="stylesheet" href="CSS/mycss2.css">
+     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      
+      
+  </head>
+  <body class="page">
+      <div class="container2">
+      
+        <header>
+          <div class="row">
+              <div class="col-2">
+          <div class ="Crest">
+      <img src="Images/Crest.png" alt="Crest"
+           width="84" height="90">
+          </div>
+              </div>
+           
+                <div class="col-8">       
+         <h1>Blacks & Whites GAA Club </h1>
+                  <h4>Cumann Dubh agus Bána CLGs</h4>
+                                 </div>
+              
+              <div class="col-2">
+          <div class ="Crest2">
+      <img src="Images/Crest.png" alt="Crest"
+           width="84" height="90">
+                  </div>
+          </div>
+            </div>
+      </header>
+         
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="nav-content">
+<ul class="navbar-nav">
+   <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+   <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item dropdown">
+   <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true"
+    aria-expanded="false">
+    Teams
+   </a>
+   <div class="dropdown-menu" aria-labelledby="Preview">
+    <a class="dropdown-item" href="Junior.html">Hurling</a>
+     <a class="dropdown-item" href="camoige.html">Camoige</a>
+   </div>
+</li>
+    <li class="nav-item"><a class="nav-link" href="shop.html">Club Shop</a></li>
+   <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+</ul>
+      </div>
+      </nav>
+      
+<div class="container-fluid text-center">    
+  <div class="row content">
+   
+       <div class="col-sm text-center"> 
+      <h1 class="team">Welcome to Tom Walsh Park</h1>
+        <img id="myImage"  src="Images/entrance.jpg" class="rounded" alt="Crest" width="600" height="300">
+      <p class="description">Blacks and Whites GAA club is a rural GAA club from Skeoughvosteen in north Kilkenny. We have GAA teams from under 8 right up to adult teams.</p>
+  </div>
+      
+      
+        <div class="col-sm-3 sidenav">
+                 <div class="well">
+          <h3 class="bar">Membership</h3>
+ <a class="button"  href="membership.html" >Sign Up Now</a>
+      </div>
+            
+            <div class="well">
+                <h3 class="bar">NoticeBoard</h3>
+<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      </div>
+            
+            <div class="well">
+          <h3 class="bar">Club Lotto</h3>
+                <a class="button"  href="lotto.html" >Enter Lotto Now</a>
+      </div> 
+    </div> 
+</div>
+    </div>
+
+      
+ 
+  <script id="footer" type="text/x-handlebars-template">
+<div class="footer1">
+  <h5>{{club}}</h5>
+  <p>{{address}}</p>
+  <p>{{tele}}</p>
+  <p>{{email}}</p>
+</div>
+</script>
+      
+     <script src="js/jquery-3.2.1.slim.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/footer.js"></script>
+     <script src="js/handlebars.min.js"></script>
+          
+          
+          <script>    
+          $(document).ready(function() {
+  $('#myImage').hover(function(){
+  $(this).attr('src', 'Images/Overview.jpg');
+   },
+  function(){
+  $(this).attr('src', 'Images/entrance.jpg');
+  });
+              
+      </script>
+      </div>
+</body>
+</html>

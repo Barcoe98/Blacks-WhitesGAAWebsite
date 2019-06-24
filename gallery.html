@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blacks and Whites GAA Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="CSS/mycss.css">
+     <link rel="stylesheet" href="CSS/mycss2.css">
+     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+     <link rel="stylesheet" href="js/myJs.js">
+     <link rel="stylesheet" href="CSS/lightbox.css" >
+      
+  </head>
+  <body class="page">
+      <div class="container2">
+      
+     <header>
+          <div class="row">
+              <div class="col-2">
+          <div class ="Crest">
+      <img src="Images/Crest.png" alt="Crest"
+           width="84" height="90">
+          </div>
+              </div>
+           
+                <div class="col-8">       
+         <h1>Blacks & Whites GAA Club </h1>
+                  <h4>Cumann Dubh agus Bána CLGs</h4>
+                                 </div>
+              
+              <div class="col-2">
+          <div class ="Crest2">
+      <img src="Images/Crest.png" alt="Crest"
+           width="84" height="90">
+                  </div>
+          </div>
+            </div>
+      </header>
+    
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+</button>
+        <div class="collapse navbar-collapse" id="nav-content">
+<ul class="navbar-nav">
+   <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+   <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item dropdown">
+   <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true"
+    aria-expanded="false">
+    Teams
+   </a>
+   <div class="dropdown-menu" aria-labelledby="Preview">
+    <a class="dropdown-item" href="Junior.html">Hurling</a>
+     <a class="dropdown-item" href="camoige.html">Camoige</a>
+   </div>
+</li>
+    <li class="nav-item"><a class="nav-link" href="shop.html">Club Shop</a></li>
+   <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+</ul>
+      </div>
+      </nav>
+          
+          <div id="container3">
+    <h1 class="team">Club Photo's</h1>
+    <div id="gallery">
+     <a href="Images/Overview.jpg" data-lightbox="image-1" data-title = "Pitch"> <img src="Images/Overview.jpg" width="60" height="60" alt="pitch" data-title="My caption">The Pitch</a>
+     <a href="Images/dance.jpg" data-lightbox="image-1" data-title = "Strickly Come Dance"><img src="Images/dance.jpg" width="60" height="60" alt="Dance" data-title="My caption">Strickley Come Dancing</a>
+     <a href="Images/bar.jpg" data-lightbox="image-1" data-title = "The Bar"><img src="Images/bar.jpg" width="60" height="60" alt="bar" data-title="My caption">The Club Bar </a>
+     <a href="Images/trophy.jpg" data-lightbox="image-1" data-title = "Trophy's"><img src="Images/trophy.jpg" width="60" height="60" alt="trophy" data-title="My caption">Trophy's</a>
+    </div>
+              <div id="photo"></div>
+          </div>
+          
+         
+  <script id="footer" type="text/x-handlebars-template">
+<div class="footer1">
+  <h5>{{club}}</h5>
+  <p>{{address}}</p>
+  <p>{{tele}}</p>
+  <p>{{email}}</p>
+</div>
+</script>
+      
+     <script src='js/jquery-3.1.1.min.js'></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/lightbox.js"></script>
+     <script src="js/footer.js"></script>
+     <script src="js/handlebars.min.js"></script>
+          
+          <script>
+$(document).ready(function() {
+
+		$('#gallery img').css('opacity', 0.6);
+
+		$('#gallery img').hover(
+		  function(){
+			$(this).stop().fadeTo('slow', 1);
+		  },
+		  function(){
+			$(this).stop().fadeTo('slow', 0.6);
+		  });
+
+		  lightbox.option({
+		       'fadeDuration':1200,//default * 2
+		       'imageFadeDuration':2400,//default * 4
+		       'wrapAround': true
+		  })
+</script>
+          
+      </div>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blacks and Whites GAA Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="CSS/mycss.css">
+     <link rel="stylesheet" href="CSS/mycss2.css">
+     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/jquery-ui.css">
+  </head>
+  <body class="page">
+      <div class="container2">
+
+        <header>
+          <div class="row">
+              <div class="col-2">
+          <div class ="Crest">
+      <img src="Images/Crest.png" alt="Crest"
+           width="84" height="90">
+          </div>
+              </div>
+           
+                <div class="col-8">       
+         <h1>Blacks & Whites GAA Club </h1>
+                  <h4>Cumann Dubh agus Bána CLGs</h4>
+                                 </div>
+              
+              <div class="col-2">
+          <div class ="Crest2">
+      <img src="Images/Crest.png" alt="Crest"
+           width="84" height="90">
+                  </div>
+          </div>
+            </div>
+      </header>
+          
+     
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="nav-content">
+<ul class="navbar-nav">
+   <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+   <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item dropdown">
+   <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true"
+    aria-expanded="false">
+    Teams
+   </a>
+   <div class="dropdown-menu" aria-labelledby="Preview">
+    <a class="dropdown-item" href="Junior.html">Hurling</a>
+     <a class="dropdown-item" href="camoige.html">Camoige</a>
+   </div>
+</li>
+    <li class="nav-item"><a class="nav-link" href="shop.html">Club Shop</a></li>
+   <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+</ul>
+      </div>
+      </nav>
+      
+          
+          <div class="container-fluid text-center">    
+  <div class="row content">
+      
+       <div class="col-sm-9 text-center"> 
+          <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Our Story</a></li>
+    <li><a href="#tabs-2">Facilities</a></li>
+    <li><a href="#tabs-3">The Stand</a></li>
+    <li><a href="#tabs-4">Bar and Function Room</a></li>
+    <li><a href="#tabs-5">New Jquery (tabs)</a></li>
+      
+  </ul>
+  <div id="tabs-1">
+    <p>The Blacks & Whites Club was founded in 1925. In its infancy the club was closely associated with one man, Tom Walsh from Courtnaboughla, Skeoughvosteen. Tom went to school locally and attended Pallaskenry college Limerick, where he played hurling and football with the college. On his return home together with Jim Brennan, Mick Moran, the Kelly’s, the Power’s, the Moylan’s and others founded the Blacks and Whites Club in 1925. Tom went on and became chairman of the Kilkenny County Board, Leinster Council and Vice President of Central Council of The G.A.A.</p>
+    <p>The Tom Walsh Cup, the trophy presented to the Kilkenny Senior Hurling Champions anually, is presented in his memory. Tom also was Minister for Agriculture at the time of his death in 1952. On May 28th 1978, the Blacks & Whites opened its new grounds at Coolnabrone, Skeoughvosteen and named it Tom Walsh Park.</p>
+      
+      <img class="pic1" src="Images/Overview.jpg" alt="Pitch View" width=500 height="400">
+  </div>
+          
+  <div id="tabs-2">
+   <p>Blacks and Whites boasts some of the finest facilities in the county. Since the origional clubhouse was built in the 1990's, the club has seen major improvmeents in the following years. Our largest undertaking was the indoor arena which has an astro turf surface. It was built in 2006 and opened in 2007 and is a very popular facility for a number of sports and events. A number of large events took place in recent years in the astroturf arena including a Wolfe Tones concert and our 'Strictly Club Dancing' fundraising event.</p> 
+      
+      
+  </div>
+          
+  <div id="tabs-3">
+    <p>Adjoining this arena is the stand which looks out onto the main pitch. The seating in the stand is the origional timber seats that were extracted from the old Hogan stand before the Croke Park stadium upgrade</p> 
+      <img class="pic2" src="Images/stand%20view.jpg" alt="Stand View" width="500" height="400">
+  </div>
+          
+  <div id="tabs-4">
+    <p>We also have a bar and function room which caters for many events and occasions. We host everything from birthdays to medal presentations, music events and funeral refreshments. We a have large plasma screen TV and projector to cater for large sporting events and training courses. </p>
+              </div>
+      
+    <div id="tabs-5">
+            <p><b>"A single content area with multiple panels, each associated with a header in a list"</b></p>
+        
+        
+        <h4>Step One: Add jQueryUI CSS links</h4>
+        <p>Links to the jQueryUI CSS should be added to the head section of the page whenever you want to make use of a jQueryUI element on your page: stylesheet" href="css/jquery-ui.css</p>
+        
+       <h4> Step Two: Add jQueryUI JavaScript links</h4>
+        <p>You should also include a link to the jQueryUI script at the end of the body section, in addition to the jQuery script: src="js/jquery-3.1.1.min.js" src="js/jquery-ui.js"</p>
+        
+        <h4>Step Three: add jQuery function</h4>
+        <p>The jQuery shown here targets the #tabs div and calls the tabs function. Add this after the three lines you added in the previous step:
+        
+         $( function() {
+    var tabs = $( "#tabs" ).tabs();
+    tabs.find( ".ui-tabs-nav" ).sortable({
+      axis: "x",
+      stop: function() {
+        tabs.tabs( "refresh" );
+      }
+    });
+  } );
+        </p>
+  
+      <h4>Step Four: use appropriate HTML</h4>
+        <p>To use the tabs element, add id=tab-1 to the div containing the headings and paragraphs.</p>
+        
+        <h4>Instructions</h4>
+        <p>Drag the tabs above to re-order them</p>
+     
+      </div>
+</div>
+           </div>
+      
+      
+        <div class="col-sm-3 sidenav">
+                 <div class="well">
+          <h3 class="bar">Membership</h3>
+ <a class="button"  href="membership.html" >Sign Up Now</a>
+      </div>
+            
+            <div class="well">
+                <h3 class="bar">NoticeBoard</h3>
+<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      </div>
+            
+            <div class="well">
+          <h3 class="bar">Club Lotto</h3>
+                <a class="button"  href="lotto.html" >Enter Lotto Now</a>
+      </div> 
+    </div> 
+</div>
+    </div>
+        
+      
+   <script id="footer" type="text/x-handlebars-template">
+<div class="footer1">
+  <h5>{{club}}</h5>
+  <p>{{address}}</p>
+  <p>{{tele}}</p>
+  <p>{{email}}</p>
+</div>
+</script>
+      
+     <script src="js/jquery-3.1.1.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.h5validate.js"></script>
+     <script src="js/jquery-ui.js"></script>
+     <script src="js/handlebars.min.js"></script>
+     <script src="js/footer.js"></script>
+          
+     
+          
+          <script> 
+          $(document).ready(function() {
+              
+               var tabs = $( "#tabs" ).tabs();
+    tabs.find( ".ui-tabs-nav" ).sortable({
+      axis: "x",
+      stop: function() {
+        tabs.tabs( "refresh" );
+      }
+    });
+              
+  $('.pic1').hover(function(){
+  $(this).attr('src', 'Images/entrance.jpg');
+   },
+  function(){
+  $(this).attr('src', 'Images/Overview.jpg');
+  });
+    
+              $("p").on({
+    mouseenter: function(){
+        $(this).css("background-color", "lightgray");
+    },
+    mouseleave: function(){
+        $(this).css("background-color", "white");
+    }
+                  
+})
+              });
+              
+              
+      </script>
+          
+      </div>
+</body>
+</html>
